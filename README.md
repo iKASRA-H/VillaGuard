@@ -1,4 +1,4 @@
-# Smart Home Security Upgrade (ESP32 + SIM800A)
+# VillaGuard (ESP32 + SIM800A GSM alarm, command)
 
 This project is a **DIY upgrade** that modernizes an existing wired alarm system for a remote villa.  
 Instead of replacing the alarm, we integrated a single **ESP32** with a **SIM800A GSM module** to read the alarm’s original wired signals and control its inputs/outputs, enabling SMS-based control and monitoring even where internet is unavailable.
