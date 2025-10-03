@@ -5,18 +5,17 @@ Instead of replacing the alarm, we integrated a single **ESP32** with a **SIM800
 
 ## 🔧 Key Features
 - **Wired-alarm integration:** Taps into the legacy wired alarm signals — reads the alarm’s command/input and controls its outputs without replacing the original panel.  
-- **SMS Control & Alerts (SIM800A):** Send SMS commands to actuate relays (siren, lights, heating); receive alerts for alarm triggers, power failures, and temperature.  
+- **SMS Control & Alerts (SIM800A):** Send SMS commands to actuate relays (siren); receive alerts for alarm triggers.  
 - **Intrusion Detection:** When the wired alarm triggers (siren/trigger line), the ESP32 detects it and sends immediate SMS alerts.  
-- **Environmental & Power Monitoring:** Reads indoor temperature via **SHT20** and monitors 12V power input to detect outages and switch to UPS backup.  
-- **Persistent States:** Relay states are stored in nonvolatile memory so the system recovers correctly after power loss.  
-- **Simple Remote Control:** Arm/disarm via SMS commands (no internet required).
+- **Environmental Monitoring:** Reads indoor temperature via **SHT20**.  
+- **Simple Remote Control:** Arm/disarm via SMS commands (no internet required) and 433MHz Remote.
 
 ## 🛠️ Hardware
 - **ESP32 Development Board** (single node)  
 - **SIM800A GSM Module**  
 - **SHT20 Temperature & Humidity Sensor**  
 - **Relay Modules** (to control siren, lights, heating)  
-- **12V Power Supply + UPS backup**
+- **12V Power Supply**
 
 ## 📍 Overview
 By reading the native wired alarm signals and controlling the same I/O lines, this project upgrades legacy systems with modern SMS-based remote control and monitoring while preserving the original alarm hardware — a low-cost, minimally invasive retrofit suitable for remote/off-grid properties.
